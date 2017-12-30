@@ -122,3 +122,6 @@ input:focus,select:focus,#save:focus{
     line-height: 15px;
     border-radius: 5px;
 }
+.comment1,.comment2,.comment3,.comment4{
+    color:#f00;
+}
