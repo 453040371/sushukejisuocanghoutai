@@ -1,0 +1,159 @@
+@media (min-width: 768px){
+	body {
+		padding-top: 45px!important;
+    }
+    .identity{
+        /* padding-left: 50px; */
+        padding-top: 20px;
+    }
+    .identity .submitBox .submit{
+        margin: 40px 50px!important;
+    }
+}
+.main_container .row-fluid{
+    position: relative;
+}
+@media (min-width:768px){
+    .identity{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .identity .img .box .box1{
+        margin: 0 auto;
+    }
+}
+
+.identity  .reg2-l{
+	width: 80px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.identity h3{
+    text-align: center;
+}
+@media (max-width: 768px){
+	.main_container{
+		padding: 10px;
+	}
+	h3{
+		font-size: 18px;
+    }
+     .identity .img .box .box1{
+        margin-left: 20px;
+    }
+    .identity h3{
+        text-align: left;
+
+    }
+}
+
+.upload{
+	position: relative;
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #ffc500;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 30px;
+	font-size: 12px;
+	width: 80px;
+	padding: 0 10px;
+	text-align: center;
+	text-decoration: none!important;
+}
+.upload:hover{
+	color:white;
+}
+.change[data-v-63d46fe7] {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.identity .img{
+	display: block;
+}
+.identity input{
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+@media (max-width: 375px){
+	width: 170px;
+}
+.identity .img .box {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+	border: 0;
+}
+.identity .img .box .box1 {
+    width: 230px;
+    position: relative;
+	height: 177px;
+    border: 0;
+    /* margin: 0 auto; */
+	display:inline-block;
+    background: #eee url(https://hcnbshop.com/ucoin2/reg/tupianshangchaun.png) no-repeat 50%;
+}
+.identity .box {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+.identity .img .box span {
+    margin: 0 30px 0 20px;
+}
+.box1[data-v-63d46fe7]{
+	position: relative;
+	margin: 0;
+    padding: 0;
+    border: 0;
+	outline: 0;
+	margin: -3px;
+}
+
+.identity .img#card1 .box2 {
+    background: #eee url(https://hcnbshop.com/ucoin2/reg/idcard-f.png) no-repeat 100%;
+    background-size: 100%;
+}
+.identity .img .box .box2 {
+    width: 277px;
+    height: 177px;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+    background-size: 100%;
+}
+.identity .img#card2 .box2 {
+    background:#eee url(https://hcnbshop.com/ucoin2/reg/idcard-b.png) no-repeat 100%;
+    background-size: 100%;
+}
+.identity .img#card3 .box2 {
+    background:#eee url(https://hcnbshop.com/ucoin2/reg/shouchi.png) no-repeat 100%;
+    background-size: 100%;
+}
+.identity .submitBox .submit {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #ffc500;
+    border-radius: 10px;
+    margin: 40px auto;
+	font-size: 18px;
+	text-decoration: none;
+}

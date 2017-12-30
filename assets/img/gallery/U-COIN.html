@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.uncoinex.com/safe/identity -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="format-detection" content="telephone=no"><meta name="description" content="The most advanced cryptocurrency exchange to buy and sell Bitcoin, HCC, ITS,ETP, EDU, ACT"><meta name="keywords" content="bitcoin, buy bitcoin, bitcoin exchange,  cryptocurrency exchange, buy HCC, EDU exchange,wire transfer, trading terminal, trading software"><title>U-COIN</title><link rel="Shortcut Icon" href="https://hcnbshop.com/static/favicon.ico"><link rel="stylesheet" href="./U-COIN_files/font_426568_v0riuerau7ue4s4i.css"><script src="./U-COIN_files/hm.js.下载"></script><script type="text/javascript" async="" defer="" src="./U-COIN_files/qingchat.frontend.min.js.下载"></script><script src="./U-COIN_files/jquery.js.下载"></script><script src="./U-COIN_files/jquery.mousewheel.js.下载"></script><link href="./U-COIN_files/app.78f86c7c70df4dc7702412b1a2d1e326.css" rel="stylesheet"><style type="text/css">/*
+ *qingchat.css
+ *Root namespace styles
+ */
+
+/** End standard selectors */
+
+/** Begin qingchat namespace selectors*/
+
+.qingchat-slider {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  width: 300px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 8px 0 0 0;
+  background-color: #f00;
+}
+
+/** End qingchat namespace selectors*/
+
+/** End utility selectors*/
+
+.qingchat-iframe-container {
+  position: fixed;
+  width: 30em;
+  height: 40em;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  border-style: solid;
+  border-width: 0 thin thin 0;
+  border-color: rgba(187, 187, 187, 0.33);
+  box-shadow: 0 0 0.75em 0 #888;
+  z-index: 2147483647;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: none;
+  overflow: hidden;
+}
+
+.qingchat-iframe-container.shown {
+  display: block;
+  transition: height .5s;
+}
+
+.qingchat-iframe-container.trans-begin {
+  height: 0 !important;
+}
+
+.qingchat-iframe-container.bottom_right {
+  right: 24px;
+  bottom: 0;
+}
+
+.qingchat-iframe-container.bottom_left {
+  left: 24px;
+  bottom: 0;
+}
+
+.qingchat-iframe-container.middle_right {
+  right: 24px;
+  bottom: 10%;
+}
+
+.qingchat-iframe-container.middle_left {
+  left: 24px;
+  bottom: 10%;
+}
+
+.qingchat-iframe-container.middle {
+  left: 0;
+  bottom: 0;
+}
+
+#qingchat-iframe {
+  background-color: #fbfbfb;
+  z-index: 2147483647;
+  width: 100%;
+  height: 100%;
+}
+
+.qingchat-shell-container {
+  position: fixed;
+  font-family: "intercom-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2147483647;
+  display: none;
+}
+
+.qingchat-shell-container.shown {
+  display: block;
+}
+
+.qingchat-shell-container.bottom_right {
+  right: 0;
+  bottom: 0;
+}
+
+.qingchat-shell-container.bottom_left {
+  left: 0;
+  bottom: 0;
+}
+
+.qingchat-shell-container.middle_right {
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.qingchat-shell-container.middle_left {
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.qingchat-shell-container.middle {
+  left: 50%;
+  bottom: 50%;
+  transform: translateY(50%) translateX(-50%);
+}
+
+.qingchat-shell-container:hover .department-list.shown {
+  display: block;
+}
+
+.qingchat-shell-container .department-list {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  overflow: hidden;
+}
+
+.qingchat-shell-container .department-list .department-item {
+  padding: 20px 35px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.qingchat-shell-container .department-list .department-item + .department-item {
+  border-top: 1px solid rgba(52, 63, 75, 0.1);
+}
+
+.qingchat-shell-container .department-list .department-item[data-status='0'] {
+  background: #dcdcdc;
+  color: darkgray;
+}
+
+.qingchat-shell-container .qingchat-bar {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  /*&.bottom_right, &.bottom_left {
+            border-top-left-radius: $radius;
+            border-top-right-radius: $radius;
+        }
+        &.middle_left {
+            border-top-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
+        &.middle_right {
+            border-top-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+        }*/
+}
+
+.qingchat-shell-container .qingchat-bar .qly-icon {
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.qingchat-shell-container .qingchat-bar .qly-text {
+  display: inline-block;
+  min-width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.qingchat-shell-container .qingchat-bar.horizontal-type {
+  height: 42px;
+}
+
+.qingchat-shell-container .qingchat-bar.horizontal-type .qly-icon {
+  background-image: url(data:image/gif;base64,R0lGODlhGgAYANUkAMbGxrCwsIGBgbOzs6CgoMXFxbW1tbu7u7Kysry8vN7e3piYmK6urufn56+vr9ra2szMzJmZmcrKypeXl83NzX9/f62trdfX19/f34CAgLS0tLGxsZ+fn8vLy+Dg4Lq6uqampp6ennh4eP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFMgAkACwAAAAAGgAYAAAGR0CScEgsGo/CkXLJbC6PzqiUKK02qdYsNlvdcqPe73UonpLLzjB6pEa3y29x/Dvn1rXn9TOvLzKRgH5KgYRJbIWEh4iLjEVBACH5BAUyACQALAYABQAOAAQAAAYbwEYBQCwaC4+DaMlsLhcJp1QUUTgC2KyWAQkCACH5BAUyACQALAYACQAOAAMAAAYXQElGQCwaK5aDaMlsLicYBGJArVY3lCAAIfkEBTIAJAAsBgAMAAoAAwAABhTAC4dALIY6H5FyqQR5NIaoVHMJAgA7);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.qingchat-shell-container .qingchat-bar.horizontal-type .qly-text {
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+.qingchat-shell-container .qingchat-bar.vertical-type {
+  width: 42px;
+  text-align: center;
+  border-radius: 8px;
+  /*&.bottom_right, &.middle_right {
+            border-top-right-radius: unset;
+            border-top-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+        }
+        &.bottom_left, &.middle_left {
+            border-top-left-radius: unset;
+            border-top-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }*/
+}
+
+.qingchat-shell-container .qingchat-bar.vertical-type .qly-icon,
+.qingchat-shell-container .qingchat-bar.vertical-type .qly-text {
+  display: block;
+  width: 26px;
+}
+
+.qingchat-shell-container .qingchat-bar.vertical-type .qly-icon {
+  background-image: url(data:image/gif;base64,R0lGODlhGgAYANUkAMbGxrCwsIGBgbOzs6CgoMXFxbW1tbu7u7Kysry8vN7e3piYmK6urufn56+vr9ra2szMzJmZmcrKypeXl83NzX9/f62trdfX19/f34CAgLS0tLGxsZ+fn8vLy+Dg4Lq6uqampp6ennh4eP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFMgAkACwAAAAAGgAYAAAGR0CScEgsGo/CkXLJbC6PzqiUKK02qdYsNlvdcqPe73UonpLLzjB6pEa3y29x/Dvn1rXn9TOvLzKRgH5KgYRJbIWEh4iLjEVBACH5BAUyACQALAYABQAOAAQAAAYbwEYBQCwaC4+DaMlsLhcJp1QUUTgC2KyWAQkCACH5BAUyACQALAYACQAOAAMAAAYXQElGQCwaK5aDaMlsLicYBGJArVY3lCAAIfkEBTIAJAAsBgAMAAoAAwAABhTAC4dALIY6H5FyqQR5NIaoVHMJAgA7);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.qingchat-shell-container .qingchat-bar.vertical-type .qly-text {
+  writing-mode: vertical-lr;
+  min-width: unset;
+  min-height: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.qingchat-shell-container .qingchat-bar.circle-type {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  margin: 10px;
+}
+
+.qingchat-shell-container .qingchat-bar.circle-type .qly-icon img,
+.qingchat-shell-container .qingchat-bar.circle-type .qly-text {
+  display: none;
+}
+
+.qingchat-shell-container .qingchat-bar.circle-type .qly-icon {
+  transform: rotate(0) scale(1);
+  display: block;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.qingchat-shell-container .qingchat-bar.circle-type.online .qly-icon {
+  background-image: url(https://visitor.qingliaoyun.com/dist/chat.7Z118CB.svg);
+  background-size: 45px 45px;
+  background-position: 6.5px center;
+}
+
+.qingchat-shell-container .qingchat-bar.circle-type.offline .qly-icon {
+  background-image: url(data:image/png;base64,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);
+  background-size: 40px 40px;
+  background-position: center 9px;
+}
+
+.qingchat-menu-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 2147483647;
+  display: none;
+  margin-bottom: 6em;
+}
+
+.qingchat-menu-container.shown {
+  display: block;
+}
+
+.qingchat-menu-container.left {
+  left: 0;
+}
+
+.qingchat-menu-container.right {
+  right: 0;
+}
+
+.qingchat-menu-container .qingchat-menu-group {
+  display: block;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  background: black;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: .85;
+  display: none;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item.shown {
+  display: block;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item .code-img-wrapper {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  min-height: 60px;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item .code-img-wrapper img {
+  max-width: 150px;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item .code-img-wrapper:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: 10px;
+  height: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: inherit;
+  border-right-color: inherit;
+  background: inherit;
+  transform: rotate(45deg);
+  margin-right: -6px;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qingchat-menu-item a:hover .code-img-wrapper {
+  display: block;
+}
+
+.qingchat-menu-container .qingchat-menu-group .qly-qq-icon {
+  background-image: url(https://visitor.qingliaoyun.com/dist/QQ.3zVwvO8.svg);
+}
+
+.qingchat-menu-container .qingchat-menu-group .qly-phone-icon {
+  background-image: url(https://visitor.qingliaoyun.com/dist/telephone.2YHMfgZ.svg);
+}
+
+.qingchat-menu-container .qingchat-menu-group .qly-wechat-icon {
+  background-image: url(https://visitor.qingliaoyun.com/dist/wechat.23VpHdq.svg);
+}
+
+.qingchat-menu-container .qingchat-menu-group .qly-chat-icon {
+  background-image: url(https://visitor.qingliaoyun.com/dist/chat.7Z118CB.svg);
+}
+
+.qingchat-menu-container.left .code-img-wrapper {
+  left: 100%;
+  right: unset !important;
+}
+
+.qingchat-menu-container.left .code-img-wrapper:after {
+  transform: rotate(-135deg) !important;
+  margin-left: -6px;
+  left: 0;
+  right: unset !important;
+}</style></head><body><div id="app" class=""><header><div class="head_t"><div class="wrapper clr"><div class="head_tl flt"><span class="mr30"><b class="mr10">市场概况</b> <i class="iconfont icon-shangjiantou1"></i> <span class="coin"><div class="sanj"></div> <p><span>币种</span> <span>最新价</span> <span>最高价</span> <span>最低价</span> <span>涨幅</span> <span>成交量</span></p> <ol><li><span>FUC /BTC</span> <span>0.00000185</span> <span>0.0000022</span> <span>0.0000015</span> <span class="gren">+37.04%</span> <span>83621159.042</span></li><li><span>HCC /BTC</span> <span>0.00000147</span> <span>0.00000165</span> <span>0.00000147</span> <span class="red">-2.00%</span> <span>157183436.547</span></li><li><span>SIX /BTC</span> <span>0.00000002</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>222935.305</span></li><li><span>ITS /BTC</span> <span>0.00001236</span> <span>0.00001238</span> <span>0.000012</span> <span class="red">-1.20%</span> <span>19465806.361</span></li><li><span>EDU /BTC</span> <span>0.0000054</span> <span>0.00000752</span> <span>0.0000052</span> <span class="red">-12.90%</span> <span>28947971.665</span></li><!----><li><span>UBC /BTC</span> <span>0.0000055</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>4651.905</span></li><li><span>EFC /BTC</span> <span>0.00000064</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>8786.829</span></li><li><span>ACT /BTC</span> <span>0.00002266</span> <span>0.0000241</span> <span>0.000003</span> <span class="red">-19.07%</span> <span>10060244.927</span></li><li><span>HCASH /BTC</span> <span>0.001895</span> <span>0.001933</span> <span>0.00175</span> <span class="gren">+8.91%</span> <span>216379.395</span></li><li><span>MVC /BTC</span> <span>0.00000741</span> <span>0.00000741</span> <span>0.00000715</span> <span class="gren">+3.64%</span> <span>39878371.483</span></li><li><span>SANC /BTC</span> <span>0.0001699</span> <span>0.0001769</span> <span>0.0001699</span> <span class="gren">+11.80%</span> <span>7808.558</span></li><li><span>IPT /BTC</span> <span>0.0000031</span> <span>0.0000031</span> <span>0.00000287</span> <span class="gren">+3.33%</span> <span>1070759.148</span></li><li><span>NULS /BTC</span> <span>0.00011201</span> <span>0.00011201</span> <span>0.00011201</span> <span class="red">-17.03%</span> <span>1283.209</span></li><li><span>YOYOW /BTC</span> <span>0.0000193</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>2660.997</span></li><li><span>BTS /BTC</span> <span>0.00004</span> <span>0.00004</span> <span>0.00004</span> <span class="red">-0.74%</span> <span>4617.887</span></li><li><span>PRL /BTC</span> <span>0.000011</span> <span>0.000011</span> <span>0.00001011</span> <span class="gren">+15.79%</span> <span>577.221</span></li><li><span>ASCH /BTC</span> <span>0.00019</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>3.00</span></li><li><span>DABT /BTC</span> <span>0.00009996</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>0.00099999999997635</span></li><li><span>MBC /BTC</span> <span>0.0000032</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>73.404</span></li><li><span>SIC /BTC</span> <span>0.00000046</span> <span>0.00000063</span> <span>0.00000045</span> <span class="red">-25.81%</span> <span>492466.456</span></li><li><span>CPL /BTC</span> <span>0.00001249</span> <span>0.00001254</span> <span>0.00000021</span> <span class="red">-0.56%</span> <span>1658.685</span></li><li><span>SWTC /BTC</span> <span>0.00000028</span> <span>0.0000003</span> <span>0.00000027</span> <span class="red">-9.68%</span> <span>2575620.3</span></li><li><span>MOAC /BTC</span> <span>0.000299</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>18.2</span></li><li><span>BTF /BTC</span> <span>0.00</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>0.00</span></li><li><span>LRC /BTC</span> <span>0.00002218</span> <span>0.00002225</span> <span>0.000021</span> <span class="gren">+19.89%</span> <span>2021041.076</span></li><li><span>GCS /BTC</span> <span>0.00000089</span> <span>0.00000089</span> <span>0.0000008</span> <span class="gren">+11.25%</span> <span>348598.123</span></li><li><span>LEEK /BTC</span> <span>0.0000061</span> <span>0.0000066</span> <span>0.0000055</span> <span class="gren">+10.91%</span> <span>108997.998</span></li><!----><li><span>RDN /BTC</span> <span>0.0002556</span> <span>0.0002556</span> <span>0.0002551</span> <span class="red">-9.17%</span> <span>489249.00</span></li><li><span>SMC /BTC</span> <span>0.00000105</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>6645.7</span></li> <li><span>BTC /UT</span> <span>102009.00</span> <span>111000.00</span> <span>102008.6</span> <span class="red">-1.44%</span> <span>1.156</span></li><li><span>EDU /UT</span> <span>0.57</span> <span>0.589</span> <span>0.45</span> <span class="red">-3.06%</span> <span>3014159.712</span></li><li><span>EFC /UT</span> <span>0.06</span> <span>0.00</span> <span>0.00</span> <span class="gren">+0.00%</span> <span>6319388.755</span></li><li><span>TBC /UT</span> <span>0.26</span> <span>0.27</span> <span>0.258</span> <span class="gren">+0.39%</span> <span>451997.036</span></li><!----><li><span>SANC /UT</span> <span>16.87</span> <span>16.9</span> <span>16.55</span> <span class="red">-0.76%</span> <span>9019.702</span></li><li><span>ZZM /UT</span> <span>5.74</span> <span>5.88</span> <span>5.6</span> <span class="gren">+3.42%</span> <span>372869.792</span></li><li><span>DABT /UT</span> <span>16.9</span> <span>19.00</span> <span>12.6</span> <span class="gren">+34.13%</span> <span>47757.015</span></li><li><span>MBC /UT</span> <span>0.2948</span> <span>0.2948</span> <span>0.281101</span> <span class="gren">+3.44%</span> <span>1559885.897</span></li><li><span>MAC /UT</span> <span>0.708</span> <span>0.708</span> <span>0.698</span> <span class="gren">+1.00%</span> <span>2003323.089</span></li><li><span>GEC /UT</span> <span>1.85</span> <span>1.85</span> <span>1.714</span> <span class="gren">+5.71%</span> <span>27555.564</span></li><!----><li><span>MOAC /UT</span> <span>25.1</span> <span>25.1</span> <span>25.1</span> <span class="gren">+0.40%</span> <span>156.98</span></li><li><span>LDC /UT</span> <span>5.61</span> <span>5.69</span> <span>5.41</span> <span class="gren">+2.94%</span> <span>38411.783</span></li><li><span>GCS /UT</span> <span>0.0999</span> <span>0.09999999</span> <span>0.0913</span> <span class="gren">+5.16%</span> <span>162041.322</span></li><!----></ol></span></span> <span class="mr80">BTC最新价<em>:</em>￥101358.930</span> <span>24hr成交量<em>:</em>1889.5866323996302 BTC / 7580742.860021123 UT</span></div> <div class="head_tr frt"><span class="pr10"><i class="iconfont icon-yonghu mr10"></i> <b>UID<em>:</em>61943</b> <b class="exit">退出</b> <div class="assets"><div class="assetsT"><p>总资产<em>:</em>0&nbsp;BTC</p> <p>净资产<em>:</em>0&nbsp;BTC</p></div> <ul><li><span class="flt"><img src="https://www.uncoinex.com/safe/identity"><b></b></span> <span class="flt">可用资产</span> <span class="flt">冻结资产</span></li><li><span class="flt"><img src="./U-COIN_files/XAS.png"><b>XAS</b></span> <span class="flt">00000</span> <span class="flt">00000</span></li><li><span class="flt"><img src="./U-COIN_files/XAS.png"><b>XAS</b></span> <span class="flt">00000</span> <span class="flt">00000</span></li><li><span class="flt"><img src="./U-COIN_files/XAS.png"><b>XAS</b></span> <span class="flt">00000</span> <span class="flt">00000</span></li></ul> <div class="assetsB"><a href="javascript:;">充值</a><a href="javascript:;">财务中心</a><a href="javascript:;">退出</a></div></div></span> <span class="lang"><img src="./U-COIN_files/zhongguo.png"> <b>简</b> <i class="iconfont icon-xiangxiasanjiaoxialazhankai"></i> <span><img src="./U-COIN_files/meiguo.png"> <b>EN</b></span></span></div></div></div> <div class="head_b"><div class="wrapper"><div class="flt"><img src="./U-COIN_files/logo.png"> <span><b>主站</b><i class="iconfont icon-down"></i> <ol><!----><li><a href="https://hk.uncoinex.com/safe/identity">香港站</a></li></ol></span></div> <ul class="flt"><li class="flt">首页</li><li class="flt">C2C交易</li><li class="flt">币币交易</li><li class="flt">行情图表</li><li class="flt">财务中心</li><li class="router-link-active flt active">安全中心</li></ul></div></div> <!----> <!----> <!----></header> <article class="lay"><div class="safe wrapper"><h3><span class="col yel">首页</span> &gt;
+  <span class="col yel">安全中心</span> &gt;
+  身份认证
+  </h3> <div class="content"><div class="aside" style="top: 370px;"><ul><li class=""><span>安全中心</span> <i class="iconfont icon-youjiantou"></i></li><li class="router-link-exact-active router-link-active active"><span>身份认证</span> <i class="iconfont icon-youjiantou"></i></li><li class=""><span>修改登录密码</span> <i class="iconfont icon-youjiantou"></i></li><li class=""><span>重置交易密码</span> <i class="iconfont icon-youjiantou"></i></li><li class=""><span>谷歌验证</span> <i class="iconfont icon-youjiantou"></i></li></ul></div> <div class="right identity"><p><span class="reg2-l">选择类型</span> <span class="reg2-r1"><span><i class="iconfont icon-dot"></i><img src="./U-COIN_files/zhongguo(1).png"><span class="inde">中国大陆地区</span></span> <span><i class="iconfont"></i><img src="./U-COIN_files/shijieditu.png"><span class="inde">其他国家及地区</span></span></span></p> <p>请确保您使用本人的真实身份进行验证,感谢您的理解与支持!</p> <p><span class="reg2-l">姓氏</span><span class="reg2-r"><input type="text" placeholder="请输入您的姓氏"></span></p> <p><span class="reg2-l">名字</span><span class="reg2-r"><input type="text" placeholder="请输入您的名字"></span></p> <p><span class="reg2-l">有效身份证</span> <span class="reg2-r"><input type="text" placeholder="请输入您的身份证号"></span></p> <div class="line"></div> <div data-v-63d46fe7="" id="card1" class="img"><h3 data-v-63d46fe7=""><span data-v-63d46fe7="">本人身份证正面照</span> <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+      <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change"></a></h3> <p data-v-63d46fe7="">请确保上传内容完整并清晰可见,资质文件平台方可见,仅支持jpg格式图片.</p> <!----> <div data-v-63d46fe7="" class="box"><div data-v-63d46fe7="" class="box1"><!----> <!----> <!----> <!----> <!----> <!----></div> <span data-v-63d46fe7="">示例<i data-v-63d46fe7="" class="iconfont icon-ai237"></i></span> <div data-v-63d46fe7="" class="box2"></div></div></div> <div data-v-63d46fe7="" id="card2" class="img"><h3 data-v-63d46fe7=""><span data-v-63d46fe7="">本人身份证反面照</span> <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+      <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change"></a></h3> <p data-v-63d46fe7="">请确保上传内容完整并清晰可见,资质文件平台方可见,仅支持jpg格式图片.</p> <!----> <div data-v-63d46fe7="" class="box"><div data-v-63d46fe7="" class="box1"><!----> <!----> <!----> <!----> <!----> <!----></div> <span data-v-63d46fe7="">示例<i data-v-63d46fe7="" class="iconfont icon-ai237"></i></span> <div data-v-63d46fe7="" class="box2"></div></div></div> <div data-v-63d46fe7="" id="card3" class="img"><h3 data-v-63d46fe7=""><span data-v-63d46fe7="">本人身份证正面照</span> <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+      <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change"></a></h3> <p data-v-63d46fe7="">请您上传一张手持身份证正面照和个人签字的照片，个人签字的内容包含“U-COIN”和当前日期。请确保照片和个人签字的内容清晰可见,仅支持jpg格式图片.</p> <h4 data-v-63d46fe7=""><span data-v-63d46fe7=""><i data-v-63d46fe7="" class="iconfont icon-dui1"></i>头像清晰</span><span data-v-63d46fe7=""><i data-v-63d46fe7="" class="iconfont icon-dui1"></i>身份证号码清晰</span><span data-v-63d46fe7=""><i data-v-63d46fe7="" class="iconfont icon-dui1"></i>包含U-COIN</span><span data-v-63d46fe7=""><i data-v-63d46fe7="" class="iconfont icon-dui1"></i>包含当前日期</span></h4> <div data-v-63d46fe7="" class="box"><div data-v-63d46fe7="" class="box1"><!----> <!----> <!----> <!----> <!----> <!----></div> <span data-v-63d46fe7="">示例<i data-v-63d46fe7="" class="iconfont icon-ai237"></i></span> <div data-v-63d46fe7="" class="box2"></div></div></div> <div class="submitBox"><a href="javascript:;" class="submit">提交</a></div></div></div></div></article> <footer><div class="foot_t"><div class="wrapper"><div><a href="https://www.uncoinex.com/about" class="">关于我们</a><a href="https://www.uncoinex.com/about/service" class="">服务条款</a><a href="https://www.uncoinex.com/about/privacy" class="">隐私保护</a><a href="https://www.uncoinex.com/about/rate" class="">费率标准</a><a href="https://www.uncoinex.com/help" class="">新手帮助</a><a href="https://www.uncoinex.com/load/coin" class="">上币申请</a></div> <div class="right"><p><a href="javascript:;" target="_blank"><i class="iconfont icon-weibo"></i> <!----></a><a href="javascript:;" target="_blank"><i class="iconfont icon-weixin"></i> <span><img src="./U-COIN_files/erweima.jpg"></span></a><a href="javascript:;" target="_blank"><i class="iconfont icon-QQ"></i> <span><img src="./U-COIN_files/qq.jpg"></span></a><a href="javascript:;" target="_blank"><i class="iconfont icon-facebook"></i> <!----></a><a href="https://twitter.com/uncoinex" target="_blank"><i class="iconfont icon-bird"></i> <!----></a><a href="https://telegram.me/unioncoinsChinese" target="_blank"><i class="iconfont icon-telegram"></i> <!----></a></p></div></div></div> <div class="foot_m"><div class="wrapper"><p>友情链接<em>:</em> <a target="_blank" href="http://www.feixiaohao.com/">非小号</a></p></div></div> <div class="foot_b"><div class="wrapper"><p>© 2017, UNION COINS LIMITED all rights reserved. ID Number: 20171871967</p></div></div> <div class="fix"><a href="javascript:;"><i class="iconfont icon-kefu"></i><span>客服</span></a> <a href="javascript:;" style="opacity: 0.5;"><i class="iconfont icon-shangjiantou"></i></a></div></footer></div><script type="text/javascript">//轻聊云客服
+      window.qcSettings = {
+          appid: '1DCC3DFD6A18FB2823CB047B95CFFC1C',
+          appkey: 'c15cb57b969e2b80f9e75d1d907526aac04c9ac1'
+      };
+      (function(){
+          var w=window,d=document;
+          function l(){
+              var a=d.createElement('script');
+              var date=new Date();
+              a.type='text/javascript';
+              a.async=!0;
+              a.defer="defer";
+              a.src='https://visitor.qingliaoyun.com/dist/js/qingchat.frontend.min.js?v=' + date.getTime();
+              var b=d.getElementsByTagName('script')[0];
+              b.parentNode.insertBefore(a,b)
+          }
+          l();
+      })();</script><script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?88332ba387e2025ff0714978f3359f5b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();</script><script type="text/javascript" src="./U-COIN_files/manifest.6531e7e038cb9d22e4c9.js.下载"></script><script type="text/javascript" src="./U-COIN_files/vendor.5297b4ed49777878614c.js.下载"></script><script type="text/javascript" src="./U-COIN_files/app.782f01b7120cc276a7fd.js.下载"></script>
+<div id="qingchat">
+        <div class="qingchat-shell-container bottom_right shown" style="margin: 0px;">
+            <section class="qingchat-bar bottom_right circle-type online" style="background: rgb(255, 197, 0);">
+                <span class="qly-icon"></span>
+                <span class="qly-text">Hi，我在这里。</span>
+            </section>
+            <section class="department-list" style="background: rgb(255, 197, 0);">
+                <!--<div class="department-item" data-val="1" data-status="0">部门1</div>-->
+            </section>
+        </div> 
+    
+        <div class="qingchat-iframe-container bottom_right" style="width: 400px; height: 400px; margin-left: 0px; margin-right: 0px;">
+            <iframe id="qingchat-iframe" class="qingchat-chat-iframe" allowtransparency="true" scrolling="no" frameborder="0" src="./U-COIN_files/index.html"></iframe>
+        </div>
+    </div></body></html>

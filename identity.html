@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>身份验证</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bluth Company">
+    <style>
+        body {
+            padding-top: 45px!important;
+        }
+    </style>
+    <link rel="shortcut icon" href="assets/ico/favicon.html">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/alertify.css" rel="stylesheet">
+    <link href="assets/css/identity.css" rel="stylesheet">
+    <link rel="Favicon Icon" href="favicon.ico">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="Realm Admin Template">
+                    </div>
+                    <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="btn btn-navbar slide_menu_left visible-tablet">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+
+                    <div class="top-menu visible-desktop">
+                        <ul class="pull-left">
+                            <li>
+                                <a id="messages" data-notification="2" href="#">
+                                    <i class="icon-envelope"></i> Messages</a>
+                            </li>
+                            <li>
+                                <a id="notifications" data-notification="3" href="#">
+                                    <i class="icon-globe"></i> Notifications</a>
+                            </li>
+                        </ul>
+                        <ul class="pull-right">
+                            <li>
+                                <a href="login.html">
+                                    <i class="icon-off"></i> 退出</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="top-menu visible-phone visible-tablet">
+                        <ul class="pull-right">
+                            <li>
+                                <a title="link to View all Messages page, no popover in phone view or tablet" href="#">
+                                    <i class="icon-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="link to View all Notifications page, no popover in phone view or tablet" href="#">
+                                    <i class="icon-globe"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="icon-off"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <!-- Side menu -->
+            <div class="sidebar-nav nav-collapse collapse">
+                <div class="user_side clearfix">
+                    <img src="assets/img/odinn.jpg" alt="Odinn god of Thunder">
+                    <h5>Odinn</h5>
+                    <a href="#">
+                        <i class="icon-cog"></i> Settings</a>
+                </div>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_F79999" href="index.html">
+                                <i class="icon-home"></i>
+                                <span>首页</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_F6F1A2" href="tasks.html">
+                                <i class="icon-tasks"></i>
+                                <span>财务中心</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse1">
+                                <i class="icon-key"></i>
+                                <span>安全中心</span>
+                            </a>
+                        </div>
+                        <div id="collapse1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <a class="accordion-toggle" href="identity.html">
+                                    <i class="icon-credit-card"></i>　身份验证</a>
+                                <a class="accordion-toggle" href="chagepassword.html">
+                                    <i class="icon-star"></i>　修改登录密码</a>
+                                <a class="accordion-toggle" href="chagetradpass.html">
+                                    <i class="icon-list-alt"></i>　修改交易密码</a>
+                                <a class="accordion-toggle" href="info.html">
+                                    <i class="icon-user"></i>　个人中心</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_C1F8A9" href="javascript:alert('暂未开放')">
+                                <i class="icon-bar-chart"></i>
+                                <span>兑换中心</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_9FDDF6" href="tickets.html">
+                                <i class="icon-bullhorn"></i>
+                                <span>推广中心</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle b_F5C294" href="help.html">
+                                <i class="icon-user"></i>
+                                <span>帮助</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Side menu -->
+
+            <!-- Main window -->
+            <div class="main_container" id="tasks_page">
+                <br>
+                <!-- <h2 class="heading">
+                存币记录
+          </h2> -->
+                <div class="row-fluid">
+                    <div class="right identity">
+                        <p>请确保您使用本人的真实身份进行验证,感谢您的理解与支持!</p>
+                        <p class="info">
+                            <span class="reg2-l">姓氏</span>
+                            <span class="reg2-r">
+                                <input type="text" placeholder="请输入您的姓氏">
+                            </span>
+                        </p>
+                        <p>
+                            <span class="reg2-l">名字</span>
+                            <span class="reg2-r">
+                                <input type="text" placeholder="请输入您的名字">
+                            </span>
+                        </p>
+                        <p>
+                            <span class="reg2-l">有效身份证</span>
+                            <span class="reg2-r">
+                                <input type="text" placeholder="请输入您的身份证号">
+                            </span>
+                        </p>
+                        <div class="line"></div>
+                        <div data-v-63d46fe7="" id="card1" class="img">
+                            <h3 data-v-63d46fe7="">
+                                <span data-v-63d46fe7="">本人身份证正面照</span>
+                                <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+                                    <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change" id='inp1'>
+                                </a>
+                            </h3>
+                            <p data-v-63d46fe7="">请确保上传内容完整并清晰可见,资质文件平台方可见</p>
+                            <!---->
+                            <div data-v-63d46fe7="" class="box">
+                                <div data-v-63d46fe7="" class="box1" id='placeholder1'>
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                </div>
+                                <!-- <span data-v-63d46fe7="">示例
+                                    <i data-v-63d46fe7="" class="iconfont icon-ai237"></i>
+                                </span>
+                                <div data-v-63d46fe7="" class="box2"></div> -->
+                            </div>
+                        </div>
+                        <div data-v-63d46fe7="" id="card2" class="img">
+                            <h3 data-v-63d46fe7="">
+                                <span data-v-63d46fe7="">本人身份证反面照</span>
+                                <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+                                    <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change" id='inp2'>
+                                </a>
+                            </h3>
+                            <p data-v-63d46fe7="">请确保上传内容完整并清晰可见,资质文件平台方可见</p>
+                            <!---->
+                            <div data-v-63d46fe7="" class="box">
+                                <div data-v-63d46fe7="" class="box1" id='placeholder2'>
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                </div>
+                                <!-- <span data-v-63d46fe7="">示例
+                                    <i data-v-63d46fe7="" class="iconfont icon-ai237"></i>
+                                </span>
+                                <div data-v-63d46fe7="" class="box2"></div> -->
+                            </div>
+                        </div>
+                        <div data-v-63d46fe7="" id="card3" class="img">
+                            <h3 data-v-63d46fe7="">
+                                <span data-v-63d46fe7="">本人身份证正面照</span>
+                                <a data-v-63d46fe7="" href="javascript:;" class="upload">点击上传
+                                    <input data-v-63d46fe7="" type="file" accept="image/jpeg,image/jpg,image/png" class="change" id='inp3'>
+                                </a>
+                            </h3>
+                            <p data-v-63d46fe7="">请您上传一张手持身份证正面照。</p>
+                            <!-- <h4 data-v-63d46fe7="">
+                                <span data-v-63d46fe7="">
+                                    <i data-v-63d46fe7="" class="iconfont icon-dui1"></i>头像清晰</span>
+                                <span data-v-63d46fe7="">
+                                    <i data-v-63d46fe7="" class="iconfont icon-dui1"></i>身份证号码清晰</span>
+                                <span data-v-63d46fe7="">
+                                    <i data-v-63d46fe7="" class="iconfont icon-dui1"></i>包含U-COIN</span>
+                                <span data-v-63d46fe7="">
+                                    <i data-v-63d46fe7="" class="iconfont icon-dui1"></i>包含当前日期</span>
+                            </h4> -->
+                            <div data-v-63d46fe7="" class="box">
+                                <div data-v-63d46fe7="" class="box1" id='placeholder3'>
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                </div>
+                                <!-- <span data-v-63d46fe7="" class="hidden-xs">示例
+                                    <i data-v-63d46fe7="" class="iconfont icon-ai237"></i>
+                                </span>
+
+                                <div data-v-63d46fe7="" class="box2 hidden-xs"></div> -->
+                            </div>
+                        </div>
+                        <div class="submitBox">
+                            <a href="javascript:;" class="submit">提交</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="row-fluid">
+          
+        </div> -->
+
+                <!--/row-fluid-->
+            </div>
+            <!--/span10-->
+        </div>
+
+
+
+    </div>
+    <!-- /Main window -->
+
+    </div>
+    <!--/.fluid-container-->
+    </div>
+    <!-- wrap ends-->
+
+
+
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src='assets/js/sparkline.js'></script>
+    <script type="text/javascript" src='assets/js/morris.min.js'></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.facybox.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.alertify.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src='assets/js/fullcalendar.min.js'></script>
+    <script type="text/javascript" src="assets/js/realm.js"></script>
+</body>
+<script>
+    //正面
+    var inp1 = document.getElementById('inp1')
+    var placeholder1 = document.getElementById('placeholder1');
+    inp1.onchange = function (e) {
+        preview(e, placeholder1);
+    }
+    //反面
+    var inp2 = document.getElementById('inp2')
+    var placeholder2 = document.getElementById('placeholder2');
+    inp2.onchange = function (e) {
+        preview(e, placeholder2);
+    }
+    //手持正面照
+    var inp3 = document.getElementById('inp3')
+    var placeholder3 = document.getElementById('placeholder3');
+    inp3.onchange = function (e) {
+        preview(e, placeholder3);
+    }
+    function preview(e, placeholder) {
+        var file = e.target.files[0];
+        console.log(e.target.files[0])
+        var img = new Image();
+        placeholder.appendChild(img)
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function (e) {
+            img.src = this.result;
+            // img.style.width = "100%";
+            // img.style.position = 'absolute';
+            $(img).css({
+                width: "100%",
+                position:"absolute",
+                top: "50%",
+                transform: "translate(0,-50%)"
+            })
+           
+            // img.style.height = "100%";
+            // console.log(img.src)
+            placeholder.style.background = 'none';
+        }
+    }
+</script>
+
+</html>

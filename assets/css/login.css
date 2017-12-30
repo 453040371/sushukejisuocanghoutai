@@ -1,0 +1,13 @@
+.row-fluid input, .row-fluid button{
+        border-radius: 5px;
+        outline: none;
+      }
+      .row-fluid input:focus,.row-fluid button:focus{
+        outline: none;
+        border: 0;
+        border: 1px solid #ccc;
+        box-shadow: none;
+      }
+      a:hover{
+        text-decoration: none;
+      }
