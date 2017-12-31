@@ -7,8 +7,6 @@ $(function(){
     hidden($('#myModal2'));
     show($('#myModal1'));
     show($('#myModal2'));
-    // var radios1 = $("#myModal1 input[type='radio']");
-    
 
     //提交锁定操作
     $('#save').on('click',function(){
@@ -87,24 +85,35 @@ $(function(){
             el2.text(string);
             el1.val('');
             return false;
-        } else {
+        } 
+        else {
             el2.text("");
-            
+        }
+        if (string === "请输入有效数量!"){
+            // console.log(321)
+            if (input < 10 || !(/^\d+$/.test(el1.val()))){
+                el2.text("数量最少10");
+                // el1.val('');
+                return false;
+            }else{
+                el2.text("");
+            }
         }
         if (string === "请输入有效手机号!") {
             if (!reg.test(input)) {
                 el2.text(string);
-                el1.val('');
+                // el1.val('');
                 return false;
             }
-        } else {
+        } 
+        else {
             el2.text("");
         }
         return true;
     }
 
     $("#recharge").on('click',function(){
-        console.log(123)
+
         var laiyuan = $.trim($('#myModal1 input:checked').val());
         var money = $.trim($('#myModal1 #form_amount1').val());
         var tel = $.trim($('#myModal1 #form_tel').val());
@@ -112,7 +121,7 @@ $(function(){
         //判断
         var telphone = test($('#form_tel'), $("#myModal1 .comment2"), "请输入有效手机号!")
         var amount1 =  test($('#form_amount1'), $("#myModal1 .comment1"), "请输入有效数量!")
-        console.log(telphone)
+        // console.log(telphone)
         if (!amount1 || !telphone){
             return;
         }
@@ -175,7 +184,7 @@ $(function(){
                 money: money,
                 tel: tel,
                 beizhu: beizhu,
-                add:add,
+                add:add ,
                 type: 2
             },
             dataType: 'json',
