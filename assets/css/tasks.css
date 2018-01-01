@@ -122,6 +122,25 @@ input:focus,select:focus,#save:focus{
     line-height: 15px;
     border-radius: 5px;
 }
-.comment1,.comment2,.comment3,.comment4{
+.comment0,.comment1,.comment2,.comment3,.comment4{
     color:#f00;
+    margin-bottom: 5px;
+}
+
+#myModal1 input[type="text"],
+#myModal2 input[type="text"],
+.control-group{
+    margin-bottom: 5px;
+}
+
+#myModal1 label,
+#myModal2 label{
+    margin-right: 10px;
+}
+
+.modal-header{
+    padding: 0 15px;
+}
+.modal-footer{
+    padding: 10px 15px;
 }

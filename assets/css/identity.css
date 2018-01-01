@@ -6,9 +6,9 @@
         /* padding-left: 50px; */
         padding-top: 20px;
     }
-    .identity .submitBox .submit{
+    /* .identity .submitBox .submit{
         margin: 40px 50px!important;
-    }
+    } */
 }
 .main_container .row-fluid{
     position: relative;
@@ -23,7 +23,14 @@
         margin: 0 auto;
     }
 }
-
+.main_container > .row-fluid{
+    margin-bottom: 0;
+}
+.identity  .line{
+    height: 0px;
+    margin-top: 20px;
+    border: 1px dashed #ccc;
+}
 .identity  .reg2-l{
 	width: 80px;
 	margin: 0;
@@ -31,7 +38,7 @@
 	display: inline-block;
 }
 .identity h3{
-    text-align: center;
+    /* text-align: center; */
 }
 @media (max-width: 768px){
 	.main_container{
@@ -41,7 +48,7 @@
 		font-size: 18px;
     }
      .identity .img .box .box1{
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
     .identity h3{
         text-align: left;
@@ -63,7 +70,8 @@
 	font-size: 12px;
 	width: 80px;
 	padding: 0 10px;
-	text-align: center;
+    text-align: center;
+    vertical-align: middle;
 	text-decoration: none!important;
 }
 .upload:hover{
@@ -114,7 +122,8 @@
     border-radius: 3px 3px 3px 3px;
 }
 .identity .img .box span {
-    margin: 0 30px 0 20px;
+    width: 50px;
+    margin: 0 20px;
 }
 .box1[data-v-63d46fe7]{
 	position: relative;
